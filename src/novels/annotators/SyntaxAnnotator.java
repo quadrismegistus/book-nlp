@@ -311,7 +311,7 @@ public class SyntaxAnnotator {
 
 			if (cm_indx % 100 == 0 || cm_indx == totalSentences) {
 				double ratio = ((double) cm_indx) / totalSentences;
-				System.err.print(String.format(
+				System.err.println(String.format(
 						"\t%.3f (%s out of %s) processed\r", ratio, s,
 						totalSentences));
 			}
