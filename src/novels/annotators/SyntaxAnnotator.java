@@ -309,8 +309,8 @@ public class SyntaxAnnotator {
 		for (int cm_indx = 0; cm_indx < sentences.size(); cm_indx++) {
 			CoreMap sentence = sentences.get(cm_indx);
 
-			if (s % 100 == 0 || s == totalSentences) {
-				double ratio = ((double) s) / totalSentences;
+			if (cm_indx % 100 == 0 || cm_indx == totalSentences) {
+				double ratio = ((double) cm_indx) / totalSentences;
 				System.err.print(String.format(
 						"\t%.3f (%s out of %s) processed\r", ratio, s,
 						totalSentences));
